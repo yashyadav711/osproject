@@ -132,7 +132,8 @@ int main()
 		printf("PROCESS\t\tARRIVAL TIME\t\tBURST TIME\t\tWAIT TIME\t\tTURNAROUND TIME");
 		for(int i=0;i<completed.size();++i)
 		{
-		printf("\nP%d\t\t%d\t\t\t%d\t\t\t%d\t\t\t%d ",completed[i].p_id,completed[i].at,completed[i].bt,completed[i].wait,completed[i].tat);
+		printf("\nP%d\t\t%d\t\t\t%d\t\t\t%d\t\t\t%d ",completed[i].p_id,completed[i].at,completed[i].bt,completed[i].wait,completed[i].tat);//output
+	
 		}
 		printf("\n\n\nAverage turn around time: %.2f\nAverage wait time:%.2f",tatavg/completed.size(),waitavg/completed.size());
 }
